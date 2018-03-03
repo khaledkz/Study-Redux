@@ -1,0 +1,84 @@
+ .coffee-mangment{
+    text-align: left;
+    background: rgb(179, 9, 9);
+    color:rgb(215, 230, 222);
+    padding: 10px;
+    padding-top:60px;
+    padding-bottom: 60px;
+}
+
+.coffee-mangment p{
+    padding: 10px;
+     width:100% ;
+    margin-bottom: 30px;
+     font-size: 1.3em;
+    
+}
+
+.coffee-mangment a:hover{
+    color:rgb(253, 249, 249);
+    background: rgb(187, 34, 7);
+
+}
+
+.coffee-mangment a{
+    text-decoration: none;
+    color:rgb(253, 249, 249);
+     margin-left:10px;
+     background: rgb(226, 66, 38);
+     border:solid 1px rgb(182, 166, 166);
+     margin-top:10px;
+     padding: 10px;
+     border-radius: 5px;
+}
+
+.coffe-order, .coffe-pricess{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.coffe-pricess input{
+    width:80px;
+}
+
+.coffe-pricess h1{
+    text-align: center;
+    color:rgb(68, 177, 86)
+}
+
+
+.coffe-items{
+    display: flex;
+    flex-wrap: wrap;
+    border:solid 1px rgb(209, 199, 199);
+    
+}
+
+.coffe-items>*{
+    width:33%;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 698px) {
+
+    .coffe-pricess input{
+        width:80px;
+    }
+
+
+    .coffe-items{
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .coffe-items>*{
+        width:20%;
+    }
+}
