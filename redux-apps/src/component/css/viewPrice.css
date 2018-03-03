@@ -1,0 +1,40 @@
+.view-prices{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.box{
+    width:90%;
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top:12px;
+    margin-bottom: 12px;
+    border: solid 1px rgb(156, 142, 142);
+}
+
+.box h3{
+    text-align: center;
+}
+
+.box li{
+    padding: 5px;
+    list-style: none;
+}
+
+li span{
+    color:rgb(112, 125, 196);
+    text-decoration: underline
+}
+
+@media only screen and (min-width: 698px) {
+    .box h3{
+        font-size:1.4em;
+        text-align: left;
+        margin-left: 15px
+    } 
+    .box li{
+        font-size:1.2em;
+    }
+        
+}
