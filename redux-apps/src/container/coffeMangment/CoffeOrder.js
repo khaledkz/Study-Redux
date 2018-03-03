@@ -4,7 +4,7 @@ import '../css/coffeMangment.css'
 class CoffeOrder extends Component {
     render(){
         return(
-        <div class="coffe-order">
+        <div className="coffe-order">
             Coffe Order
         </div>)
     }

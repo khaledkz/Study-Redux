@@ -2,8 +2,7 @@
     text-align: left;
     background: rgb(179, 9, 9);
     color:rgb(215, 230, 222);
-    padding: 10px;
-    padding-top:60px;
+     padding-top:60px;
     padding-bottom: 60px;
 }
 
@@ -49,10 +48,13 @@
 
 
 .coffe-items{
+    padding-top: 8px;
     display: flex;
     flex-wrap: wrap;
     border:solid 1px rgb(209, 199, 199);
-    
+    margin-bottom:10px;
+    padding: 4px;
+    margin: 3px;
 }
 
 .coffe-items>*{
@@ -71,9 +73,9 @@
 
 
     .coffe-items{
-        width:90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
         padding: 20px;
         border-radius: 10px;
     }
@@ -81,4 +83,8 @@
     .coffe-items>*{
         width:20%;
     }
+}
+
+.lastLink{
+    margin-top: 30px
 }
