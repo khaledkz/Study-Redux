@@ -7,8 +7,7 @@ class ReducCalculator extends Component {
      }
 
     render() {
-        let numberValue = document.getElementById('calcValue')
-        if(this.props.calculator.result>0){
+         if(this.props.calculator.result>0){
             return (
                 <div>
                     <h1>Calculator Redux app </h1>

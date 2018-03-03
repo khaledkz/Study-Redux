@@ -8,25 +8,29 @@ const CoffeViewPrice = (props) => {
         <div className="view-prices">
             <h1>View Prices</h1>
 
-            <div class="box">
+            <div className="box">
                 <h3>Coffe Prices List</h3>
                 <ul>
                     {props.coffe.map((x) => {
                         if (x.kind === "coffe") {
-                            return <li>{x.name}: <span>£{x.price}</span>.</li>
+                            return <li key={x.id}>{x.name}: <span>£{x.price}</span>.</li>
+                        }else{
+                            return  ''
                         }
                     })}
                 </ul>
             </div>
 
-            <div class="box">
+            <div className="box">
                 <h3>Cake Prices List</h3>
 
                 <ul>
 
                     {props.coffe.map((x) => {
                         if (x.kind === "cake") {
-                            return <li>{x.name}: <span>£{x.price}</span>.</li>
+                            return <li key={x.id}>{x.name}: <span>£{x.price}</span>.</li>
+                        }else{
+                            return  ''
                         }
                     })}
 
@@ -34,14 +38,16 @@ const CoffeViewPrice = (props) => {
 
             </div>
 
-            <div class="box">
+            <div className="box">
                 <h3>Drink Prices List</h3>
 
                 <ul>
 
                     {props.coffe.map((x) => {
                         if (x.kind === "drink") {
-                            return <li>{x.name}: <span>£{x.price}</span>.</li>
+                            return <li key={x.id}>{x.name}: <span>£{x.price}</span>.</li>
+                        }else{
+                            return  ''
                         }
                     })}
 

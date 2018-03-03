@@ -18,7 +18,7 @@ export default function (
                 return Object.assign({}, state, { formula, total, screenresult,operator:'+' }); 
 
             case '*':
-                if (state.total == 0) {
+                if (state.total === 0) {
                     total = Number(state.screenresult) * 1;
                     formula = state.formula + '*';
                     screenresult = '';
@@ -58,6 +58,8 @@ export default function (
                     case '-':
                     total = Number(state.total) - Number(state.screenresult);
                       break;
+                    default:
+                    return state;
                 }
                  screenresult = '';
                   result = total;
@@ -71,17 +73,17 @@ export default function (
          switch (action.type) {
             case 'number':
                 let formula = state.formula + action.number
-                screenresult = state.screenresult + action.number;
+                let screenresult = state.screenresult + action.number;
                 return Object.assign({}, state, { screenresult, formula, result: 0, total: 0,secTotal:0 });
 
             case '+':
                 let secTotal = Number(state.screenresult) + Number(state.secTotal);
                 formula = state.formula + '+';
-                let screenresult = ''
+                 screenresult = ''
                 return Object.assign({}, state, { formula, secTotal, screenresult });
 
             case '*':
-                if (state.secTotal == 0) {
+                if (state.secTotal === 0) {
                       secTotal = Number(state.screenresult) * 1;
 
                 } else {
@@ -109,6 +111,8 @@ export default function (
                 case '*':
                    secTotal = Number(state.screenresult) * Number(state.secTotal);
                    break;
+                default:
+                return state;
 
             }
                  screenresult = '';
