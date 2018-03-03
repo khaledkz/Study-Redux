@@ -1,0 +1,10 @@
+.calculatorButtons{
+    margin-top:20px
+}
+.calculatorButtons>*{
+    padding: 10px;
+    font-size: 1.4em
+}
+.calculatorButtons button:last-child{
+    background: rgb(103, 201, 204);
+}
