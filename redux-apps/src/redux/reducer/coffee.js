@@ -1,6 +1,6 @@
 import initalizePrice from '../store/initalizePrices';
 
-export default function (state = {items:initalizePrice}, action) {
+export default function (state = {items:initalizePrice,orders:{}}, action) {
 
     switch (action.type) {
 
