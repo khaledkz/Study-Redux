@@ -1,5 +1,5 @@
 export default[
-    {id:'000',},
+   
     {id: "0", name: "Americano", price: "3.5",kind:'coffe'}
     ,
     {id: "1", name: "Affogato coffe", price: "2.5",kind:'coffe'}
