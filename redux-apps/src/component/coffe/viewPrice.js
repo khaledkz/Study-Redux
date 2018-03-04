@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import '../css/viewPrice.css'
 
 const CoffeViewPrice = (props) => {
-    console.log(props.coffe)
+    console.log(props.state)
     return (
         <div className="view-prices">
             <h1>View Prices</h1>
@@ -60,7 +60,8 @@ const CoffeViewPrice = (props) => {
 
 const StateToProps = (state) => {
     return {
-        coffe: state.CoffeMangment.items
+        coffe: state.CoffeMangment.items,
+        state:state.CoffeMangment
     }
 }
 

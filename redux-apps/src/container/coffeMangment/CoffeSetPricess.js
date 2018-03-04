@@ -1,22 +1,36 @@
 import React, { Component } from 'react';
 import '../css/coffeMangment.css';
 import CoffeDb from '../../redux/actions/coffe/setPrice';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 
 class CoffeSetPricess extends Component {
 
     constructor() {
         super();
         this.state={
-             items:[
-                {id:'0',name:'Americano',price:0},{id:'1',name:'AffogatoCoffe',price:0},{id:'2',name:'CoffeBicerin',price:0},
-                {id:'3',name:'CoffeBreve',price:0},{id:'4',name:'CofeBombon',price:0},{id:'5',name:'CofeAuLait',price:0},
-                {id:'6',name:'CafeLatte',price:0},{id:'7',name:'AngelCake',price:0},{id:'8',name:'TorateCake',price:0},
-                {id:'9',name:'AppleCake',price:0},{id:'10',name:'ApplesauceCake',price:0},{id:'11',name:'AranygaluskaCake',price:0}
-                ,{id:'12',name:'AvocadoCake',price:0},{id:'13',name:'BabkaCake',price:0},{id:'14',name:'DrinkTea',price:0},
-                {id:'15',name:'DrinkShisha',price:0},{id:'16',name:'DrinkMilk',price:0},{id:'17',name:'DrinkJuice',price:0},
-                {id:'18',name:'DrinkSahlab',price:0},{id:'19',name:'DrinkCola',price:0},{id:'20',name:'DrinkKoktail',price:0}    
-             ]
+            items:[             
+                {id: "0", name: "Americano", price: "3.5",kind:'coffe'},
+                {id: "1", name: "Affogato coffe", price: "2.5",kind:'coffe'},
+                {id: "2", name: "Bicerin", price: "4",kind:'coffe'},
+                {id: "3", name: "Breve", price: "3.25",kind:'coffe'},
+                {id: "4", name: "cofe Bombon", price: "1.75",kind:'coffe'},
+                {id: "5", name: "cofe au lait", price: "3.5",kind:'coffe'},
+                {id: "6", name: "cafe latte", price: "1.75",kind:'coffe'},
+                {id: "7", name: "Angel cake", price: "2",kind:'cake'},
+                {id: "8", name: "Torate", price: "1.25",kind:'cake'},
+                {id: "9", name: "Apple cake", price: "4",kind:'cake'},
+                {id: "10", name: "Applesauce", price: "3.5",kind:'cake'},
+                {id: "11", name: "Aranygaluska", price: "5",kind:'cake'},
+                {id: "12", name: "Avocado cake", price: "6.5",kind:'cake'},
+                {id: "13", name: "Babka", price: "4.5",kind:'cake'},
+                {id: "14", name: "Tea", price: "1",kind:'drink'},
+                {id: "15", name: "Shisha", price: "5.5",kind:'drink'},
+                {id: "16", name: "Milk", price: "1.5",kind:'drink'},
+                {id: "17", name: "Juice", price: "2",kind:'drink'},
+                {id: "18", name: "Sahlab", price: "2.5",kind:'drink'},
+                {id: "19", name: "Cola", price: "1",kind:'drink'},
+                {id: "20", name: "koktail", price: "5.5",kind:'drink'}
+                  ]
         }
 
     }
@@ -46,8 +60,7 @@ class CoffeSetPricess extends Component {
     }
 
     render() {
-
- 
+  
 
         return (
             <div className="coffe-pricess">
@@ -183,11 +196,11 @@ class CoffeSetPricess extends Component {
 
 }
 
-export default CoffeSetPricess;
+// export default CoffeSetPricess;
 
-// function stateToProps(state) {
-//     return {
-//         CoffeMangment: state.CoffeMangment
-//     }
-// }
-// export default connect(stateToProps)(CoffeSetPricess);
+function stateToProps(state) {
+    return {
+        CoffeMangment: state.CoffeMangment
+    }
+}
+export default connect(stateToProps)(CoffeSetPricess);
