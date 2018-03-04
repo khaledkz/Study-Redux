@@ -42,8 +42,7 @@ class CoffeOrder extends Component {
 
     render() {
 
-        console.log(this.state.items);
-
+ 
 
         return (
             <div className="coffe-pricess">

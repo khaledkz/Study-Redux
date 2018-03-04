@@ -60,7 +60,7 @@ const CoffeViewPrice = (props) => {
 
 const StateToProps = (state) => {
     return {
-        coffe: state.CoffeMangment
+        coffe: state.CoffeMangment.items
     }
 }
 
