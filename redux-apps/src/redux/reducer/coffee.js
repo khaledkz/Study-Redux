@@ -1,24 +1,35 @@
-
 import initalizePrice from '../store/initalizePrices';
 
-export default function(state=initalizePrice,action){
+export default function (state = initalizePrice, action) {
 
-    switch(action.type){
-        
+    
+    // const checkItemArr = () =>{
+    //     return [...state,{ name: action.itemName, price: action.itemPrice}];
+    // }
+    
+    const checkItemObj = () => {
+
+        return state.map((x) => {
+            if (x.id === action.id) {
+                console.log(action.id)
+                return Object.assign({}, x, { name: action.itemName, price: action.itemPrice, kind: action.kind })
+            } else {
+                return x;
+            }
+        })
+    
+    }
+
+    switch (action.type) {
+
         case 'setItemPrice':
-                return   state.map((x)=>{
-                     if(x.id===action.id){
-                         console.log(action.id)
-                         return Object.assign({},x,{name:action.itemName ,price:action.itemPrice})
-                    }else{
-                        return x
-                    }
-                }) 
+
+                return checkItemObj()
            
 
 
         default:
-        return state;
+            return state;
     }
-    
- }
+
+}

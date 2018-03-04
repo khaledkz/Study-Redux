@@ -1,4 +1,5 @@
 export default[
+    {id:'000',},
     {id: "0", name: "Americano", price: "3.5",kind:'coffe'}
     ,
     {id: "1", name: "Affogato coffe", price: "2.5",kind:'coffe'}
@@ -42,5 +43,4 @@ export default[
     {id: "20", name: "koktail", price: "5.5",kind:'drink'}
      ,
     {id: "21"} ,{id: "22"} ,{id: "23"} ,{id: "24"} ,{id: "25"},{id: "26"}, {id: "27"},
-    {id: "28"},{id: "29"}
-    ]
+    {id: "28"},{id: "29"}]
