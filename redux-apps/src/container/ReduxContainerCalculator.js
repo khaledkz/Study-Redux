@@ -77,8 +77,7 @@ class ReducCalculator extends Component {
 }
 
 const mapStateToProps = state => {
-    console.log(state.calculator)
-    return {
+     return {
         calculator: state.calculator
     }
 

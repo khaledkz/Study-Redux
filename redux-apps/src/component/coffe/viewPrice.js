@@ -4,7 +4,7 @@ import '../css/viewPrice.css'
 
 const CoffeViewPrice = (props) => {
     console.log(props.state)
-    return (
+     return (
         <div className="view-prices">
             <h1>View Prices</h1>
 
