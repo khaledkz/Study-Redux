@@ -8,7 +8,7 @@
         store.dispatch({type:'decremant'});
     },
     dublicate:()=>{
-        store.dispatch({type:'dunlicate'});
+        store.dispatch({type:'dublicate'});
     },
     reset:()=>{
         store.dispatch({type:'reset'})

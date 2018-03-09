@@ -8,7 +8,7 @@ export default function(state=0,action){
         case 'decremant':
         return state-1;
 
-        case 'dunlicate':
+        case 'dublicate':
         return state*2;
 
         case 'reset':
